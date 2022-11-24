@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+    let a = +prompt('Nhập sản lượng điện tiêu thụ (kWh):');
+    const money1 = a*1678;
+    const money2 = 50*1678 + (a - 50)*1734;
+    const money3 = 50*1678 + 50*1734 + (a - 100)*2014;
+    const money4 = 50*1678 + 50*1734 + 100*2014 + (a - 200)*2536;
+    const money5 = 50*1678 + 50*1734 + 100*2014 + 100*2536 + (a - 300)*2834;
+    const money6 = 50*1678 + 50*1734 + 100*2014 + 100*2536 + 100*2834 + (a-400)*2927;
+    if (a <= 50){
+        document.write('Tiền điện là: ' + money1);
+    } else if (a <= 100){
+        document.write('Tiền điện là: ' + money2);
+    } else if (a <= 200){
+        document.write('Tiền điện là: ' + money3);
+    }else if (a <= 300){
+        document.write('Tiền điện là: ' + money4);
+    }else if (a <= 400){
+        document.write('Tiền điện là: ' + money5);
+    }else {
+        document.write('Tiền điện là: ' + money6);
+    }
+</script>
+</body>
+</html>
